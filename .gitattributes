@@ -1,0 +1,15 @@
+* text=auto
+*.ps1 text eol=crlf
+*.cmd text eol=crlf
+# The pre-rendered cache fingerprint uses these exact source bytes.
+index.html -text
+style.css -text
+cinematic.css -text
+image-settings.js -text
+effects.js -text
+animation.js -text
+contour-renderer.js -text
+assets/contours.js -text
+*.png binary
+*.webp binary
+*.mp4 binary

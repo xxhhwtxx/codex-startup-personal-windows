@@ -1,0 +1,20 @@
+# Machine-specific startup state and shortcut backups
+runtime-state.json
+startup-events.jsonl
+*.lnk
+.cache/
+node_modules/
+tools/ffmpeg.exe
+tools/*.dll
+
+# Locally generated themes and cache work files
+assets/movie-render-request.json
+assets/movie-render-status.json
+assets/movie-render.lock
+assets/*.pending.mp4
+
+# Desktop/editor artifacts
+.DS_Store
+Thumbs.db
+desktop.ini
+*.zip

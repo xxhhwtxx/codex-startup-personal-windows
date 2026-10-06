@@ -1,0 +1,13 @@
+{
+  "name": "codex-startup-personal-windows",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Personal character-themed startup animation for the official Codex app on Windows",
+  "type": "module",
+  "engines": { "node": ">=22" },
+  "scripts": {
+    "check": "node tools/check.mjs",
+    "cache:build": "node extension/bake-movie.mjs --background",
+    "cache:probe": "node extension/bake-movie.mjs --background --probe"
+  }
+}

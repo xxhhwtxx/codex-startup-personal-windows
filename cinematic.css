@@ -1,0 +1,83 @@
+/* Spring palette expressed as one floral crest and its dispersion. */
+#image-settings{display:none!important}
+#settings-dialog [hidden]{display:none!important}
+.clean-mode-option{flex-direction:row!important;align-items:center;flex-wrap:wrap}
+.clean-mode-option input{width:auto!important;accent-color:#edb6cd}
+.clean-mode-option small{flex-basis:100%}
+.window[data-show-text=false] :is(.boot-title,.boot-caption,.subtitle,.end-screen h1,.end-description){display:none}
+.presentation{display:block;background:#0c0912;overflow:hidden}
+.presentation .preview{width:100vw;height:100vh;padding:0}
+.presentation .window{width:100%;height:100%;aspect-ratio:auto;border:0;border-radius:0;box-shadow:none}
+.presentation :is(.preview-heading,.controls,.preview-note,.sync,.coordinates,.skip,.boot-logs,.replay-end,.boot-caption){display:none!important}
+.presentation .identity{width:clamp(230px,32vw,480px)}
+.presentation .finale-emblem{width:clamp(100px,13vw,160px);height:clamp(100px,13vw,160px)}
+.presentation .end-screen h1{font-size:clamp(25px,3vw,38px)}
+.presentation .end-description{font-size:clamp(13px,1.4vw,19px)}
+.window.warming:after{content:"";position:absolute;inset:0;z-index:10;background:rgba(12,9,18,.99);pointer-events:none}
+:root{--petal:#edb6cd;--lilac:#bba8d4;--ivory:#f8e9e8}
+.scene{background:radial-gradient(ellipse at 50% 44%,#24182e 0%,#0c0912 56%,#07060a 100%)}
+.memory-art,.sakura-field{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center;pointer-events:none}
+.memory-art{opacity:0;filter:saturate(.55)}
+.sakura-field{z-index:1}
+.intro{z-index:2}
+.line-art{z-index:3}
+.hud,.shade{z-index:4}
+.transition-flash{z-index:5}
+.identity{width:32%;top:47%}
+.radar{width:82%}
+.dial{opacity:.33}
+.crosshair,.reticle,.boot-grid,.boot-logs,.wave{display:none}
+.avatar-frame{inset:22%;padding:6px;border-radius:50%;border-color:#eec9df;box-shadow:0 10px 30px #0008;background:#130d1a}
+.avatar-frame:before,.avatar-frame:after{display:none}
+.avatar{border-radius:50%;image-rendering:auto;filter:none}
+.boot-title{font-family:"Songti SC","STSong","SimSun",serif;font-size:clamp(23px,3.3vw,39px);font-weight:500;letter-spacing:.22em;padding-left:.22em;color:var(--ivory);text-shadow:0 3px 17px #130b1fcc;margin-top:14px}
+.boot-caption{font-family:"Segoe UI",sans-serif;font-size:9px;letter-spacing:3px;color:#cfb6d3;margin-top:10px}
+.pulse i{border-width:1px;border-color:#d1a5da}
+.sync{width:19%;top:8%;opacity:.8}
+.sync-track{height:2px;border:0;background:#fff2}
+.sync-fill{background:var(--petal);box-shadow:none}
+.corner{border-color:#dec5de;opacity:.45}
+.subtitle{bottom:7%;font-weight:400;line-height:1.7;letter-spacing:1px;color:#fff3f5;text-shadow:0 2px 6px #110a17,0 3px 20px #110a17}
+#subtitle{display:inline-block;padding:4px 18px;border-bottom:1px solid #e8b1cd65}
+.shade{background:linear-gradient(180deg,#11091536 0%,transparent 32%,transparent 67%,#160c1f99 100%)}
+.scanlines{display:none}
+.preview-heading{font-family:"Segoe UI",sans-serif;font-size:10px;letter-spacing:2px;color:#bca8bd}
+.end-screen{background:radial-gradient(ellipse at 50% 43%,#2f2038,#100d17 74%)}
+.end-star{color:var(--petal)}
+.preview-note,.preview-note span{color:#b09bad}
+.eyebrow,#settings-dialog .eyebrow{display:none}
+.skip{color:#cbb6cc}
+::selection{background:#c08ba55e;color:#fff0f6}
+input,textarea{caret-color:var(--petal)}
+button:focus-visible,input:focus-visible{outline-color:var(--petal)}
+@media(max-width:600px){
+  .identity{width:43%;top:44%}
+  .boot-title{font-size:20px;margin-top:8px;letter-spacing:.12em;padding-left:.12em}
+  .boot-caption{font-size:6px;letter-spacing:1.5px;margin-top:6px}
+  .avatar-frame{padding:3px}
+  .sync{font-size:6px;width:22%;top:9%}
+  .subtitle{font-size:11px;left:5%;right:5%;bottom:7%;letter-spacing:.25px}
+  #subtitle{padding:2px 6px;max-width:100%}
+  #image-settings{top:11px;right:13px;font-size:9px;padding:5px 7px}
+}
+@media(prefers-reduced-motion:reduce){.sakura-field{opacity:.65}}
+
+/* Finale: one crystal-flower crest settles after the shutter disappears. */
+.end-screen{isolation:isolate;gap:0;overflow:hidden;padding:30px;background:#100d17}
+.finale-art{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2;opacity:calc(var(--finale-reveal,0) * .21);filter:saturate(.65)}
+.end-screen:before{content:"";position:absolute;inset:0;z-index:-1;background:radial-gradient(ellipse at 50% 40%,#23142c88,#0c0913e8 78%);pointer-events:none}
+.finale-emblem{display:block;width:140px;height:140px;flex:none;opacity:var(--finale-reveal,0);margin-bottom:11px;filter:drop-shadow(0 5px 15px #bb7cab32)}
+.crest-orbit,.crest-bloom{transform-origin:100px 100px}
+.end-screen h1{font-family:"Songti SC","STSong","SimSun",serif;font-size:31px;font-weight:400;letter-spacing:.13em;margin:6px 0 0;color:#f7e9f0;opacity:var(--finale-text,0)}
+.end-description{font-size:14px;letter-spacing:.4px;margin:15px 0 24px;color:#dcc6dd;opacity:var(--finale-text,0);max-width:38em}
+.replay-end{display:inline-flex;align-items:center;gap:19px;padding:10px 19px;min-height:40px;border-color:#d1a5cc4d;background:#bd93c00d;color:#e7cce5;opacity:var(--finale-text,0)}
+.replay-end svg{flex:none}
+.replay-end:hover{background:#d7acc51f;border-color:#d9b0d289}
+@media(max-width:600px){
+  .end-screen{padding:12px}
+  .finale-emblem{width:66px;height:66px;margin-bottom:3px}
+  .end-screen h1{font-size:21px;margin:2px 0 0;letter-spacing:.08em}
+  .end-description{font-size:11px;line-height:1.7;margin:7px 0 12px}
+  .replay-end{font-size:10px;min-height:30px;padding:5px 13px;gap:12px}
+  .replay-end svg{width:12px;height:12px}
+}
